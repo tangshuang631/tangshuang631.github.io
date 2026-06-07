@@ -1,6 +1,6 @@
 # tangshuang631.github.io
 
-唐爽的 GitHub Pages 个人主页仓库。
+谭懿铖的 GitHub Pages 个人主页仓库。
 
 当前主页地址：
 
