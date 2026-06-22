@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="OpenCow 产品介绍页。"
-    />
-    <title>OpenCow | 产品页</title>
+    <meta name="description" content="OpenCow 产品展示页" />
+    <title>OpenCow | 产品展示页</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,183 +14,264 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell case-shell">
-      <header class="hero case-hero reveal" id="top">
-        <nav class="topbar" aria-label="产品页导航">
+    <div class="page-shell case-shell case-shell-editorial">
+      <header class="hero hero-flat reveal" id="top">
+        <nav class="topbar topbar-flat" aria-label="产品页导航">
           <a class="brand" href="index.html">OpenCow</a>
           <div class="topbar-links">
-            <a href="#product">产品</a>
-            <a href="#screenshots">截图</a>
-            <a href="#features">能力</a>
+            <a href="#overview">概览</a>
+            <a href="#modules">模块</a>
             <a href="#status">状态</a>
           </div>
         </nav>
 
-        <section class="case-hero-grid" id="product">
-          <div>
+        <section class="hero-grid hero-grid-editorial" id="overview">
+          <div class="hero-copy">
             <p class="eyebrow">Desktop Workbench</p>
             <h1>OpenCow</h1>
             <p class="hero-lead">
-              一个面向本地工作流的桌面工作台产品，用于统一承载对话、搜索、知识管理与扩展能力接入。
+              面向本地工作流的桌面工作台产品
+              统一承载对话 搜索 知识管理与扩展能力接入
             </p>
-            <div class="project-tag-row case-tag-row">
-              <span class="project-tag">对话工作台</span>
-              <span class="project-tag">搜索 / RAG</span>
-              <span class="project-tag">知识库</span>
-              <span class="project-tag">Skills / NPC / MCP</span>
-            </div>
             <div class="hero-actions">
               <a class="button button-primary" href="https://github.com/tangshuang631/opencow" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="button button-secondary" href="#screenshots">看截图</a>
+              <a class="button button-secondary" href="#modules">查看模块</a>
             </div>
           </div>
-
           <div class="hero-side-text">
-            <p class="minimal-note">当前版本已完成基础功能整合，界面与交互仍在持续完善。</p>
+            <p class="minimal-note">当前版本已完成主要功能整合 重点继续优化界面细节 交互反馈与执行链路</p>
           </div>
         </section>
       </header>
 
       <main>
-        <section class="section case-overview reveal">
-          <div class="overview-strip">
-            <div class="overview-column">
-              <p class="detail-tag">定位</p>
-              <h3>桌面工作台</h3>
-              <p>围绕本地使用场景设计的统一工作入口。</p>
+        <section class="section section-flat reveal">
+          <div class="section-heading section-heading-tight">
+            <h2>产品概览</h2>
+          </div>
+          <div class="overview-pairs">
+            <div class="overview-pair">
+              <span>产品定位</span>
+              <p>面向本地使用场景的统一工作入口</p>
             </div>
-            <div class="overview-column">
-              <p class="detail-tag">价值</p>
-              <h3>统一整合</h3>
-              <p>将常用能力集中在同一界面中，降低切换成本。</p>
+            <div class="overview-pair">
+              <span>核心目标</span>
+              <p>把常用能力集中在同一界面中 降低切换与理解成本</p>
             </div>
           </div>
         </section>
 
-        <section class="section screenshot-section reveal" id="screenshots">
-          <div class="section-heading">
-            <h2>截图</h2>
-            <p>以下为当前版本的真实界面截图。</p>
+        <section class="section section-flat reveal" id="modules">
+          <div class="section-heading section-heading-tight">
+            <h2>模块展示</h2>
           </div>
 
-          <div class="screenshot-grid">
-            <figure class="screenshot-card reveal" data-delay="0.02">
-              <img src="assets/opencow/01-chat-cliconcepts.png" alt="OpenCow 对话页截图" />
-              <figcaption>
-                <strong>对话</strong>
-                <span>用于承载主要任务流程与结果输出。</span>
-              </figcaption>
-            </figure>
-            <figure class="screenshot-card reveal" data-delay="0.04">
-              <img src="assets/opencow/02-search-settings.png" alt="OpenCow 搜索设置截图" />
-              <figcaption>
-                <strong>搜索</strong>
-                <span>支持搜索来源与参数配置。</span>
-              </figcaption>
-            </figure>
-            <figure class="screenshot-card reveal" data-delay="0.06">
+          <article class="module-row reveal">
+            <div class="module-media">
+              <img src="assets/opencow/01-chat-cliconcepts.png" alt="OpenCow 对话模块截图" />
+            </div>
+            <div class="module-copy">
+              <h3>会话工作区</h3>
+              <dl class="module-meta">
+                <div>
+                  <dt>技术栈</dt>
+                  <dd>React Tauri Ollama 本地模型交互</dd>
+                </div>
+                <div>
+                  <dt>功能</dt>
+                  <dd>负责承载用户输入 任务响应 搜索上下文与结果输出</dd>
+                </div>
+                <div>
+                  <dt>设计思路</dt>
+                  <dd>把主要交互集中在中间工作区 左侧负责导航 右侧负责状态与任务信息 避免信息散落</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="module-row reveal">
+            <div class="module-media">
+              <img src="assets/opencow/02-search-settings.png" alt="OpenCow 搜索模块截图" />
+            </div>
+            <div class="module-copy">
+              <h3>搜索与 RAG</h3>
+              <dl class="module-meta">
+                <div>
+                  <dt>技术栈</dt>
+                  <dd>本地搜索配置 自定义 Provider RAG 上下文接入</dd>
+                </div>
+                <div>
+                  <dt>功能</dt>
+                  <dd>支持联网搜索来源配置 搜索测试与来源展示</dd>
+                </div>
+                <div>
+                  <dt>设计思路</dt>
+                  <dd>把搜索能力做成可配置入口 而不是默认隐藏功能 让来源 失败回退和后续接入都更清楚</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="module-row reveal">
+            <div class="module-media">
               <img src="assets/opencow/03-knowledge-library.png" alt="OpenCow 知识库截图" />
-              <figcaption>
-                <strong>知识库</strong>
-                <span>支持文件导入与知识内容管理。</span>
-              </figcaption>
-            </figure>
-            <figure class="screenshot-card reveal" data-delay="0.08">
-              <img src="assets/opencow/04-skills.png" alt="OpenCow Skills 截图" />
-              <figcaption>
-                <strong>Skills</strong>
-                <span>集中管理本地技能能力。</span>
-              </figcaption>
-            </figure>
-            <figure class="screenshot-card reveal" data-delay="0.1">
-              <img src="assets/opencow/05-npc.png" alt="OpenCow NPC 截图" />
-              <figcaption>
-                <strong>NPC</strong>
-                <span>用于角色化配置与能力组织。</span>
-              </figcaption>
-            </figure>
-            <figure class="screenshot-card reveal" data-delay="0.12">
-              <img src="assets/opencow/06-mcp.png" alt="OpenCow MCP 截图" />
-              <figcaption>
-                <strong>MCP</strong>
-                <span>提供扩展能力接入与管理入口。</span>
-              </figcaption>
-            </figure>
-            <figure class="screenshot-card reveal" data-delay="0.14">
-              <img src="assets/opencow/07-audit.png" alt="OpenCow 审计截图" />
-              <figcaption>
-                <strong>审计</strong>
-                <span>保留关键操作记录与执行上下文。</span>
-              </figcaption>
-            </figure>
-            <figure class="screenshot-card reveal" data-delay="0.16">
-              <img src="assets/opencow/08-settings.png" alt="OpenCow 设置截图" />
-              <figcaption>
-                <strong>设置</strong>
-                <span>提供本地模型与全局参数配置。</span>
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section class="section feature-section reveal" id="features">
-          <div class="section-heading">
-            <h2>能力</h2>
-          </div>
-
-          <div class="feature-rail">
-            <article class="feature-slab">
-              <div>
-                <p class="detail-tag">01</p>
-                <h3>统一入口</h3>
-              </div>
-              <p>对话、任务与状态信息统一汇集在主工作区中。</p>
-            </article>
-            <article class="feature-slab">
-              <div>
-                <p class="detail-tag">02</p>
-                <h3>搜索和知识</h3>
-              </div>
-              <p>支持搜索、知识库与本地文件接入能力。</p>
-            </article>
-            <article class="feature-slab">
-              <div>
-                <p class="detail-tag">03</p>
-                <h3>本地能力</h3>
-              </div>
-              <p>Skills、NPC 与 MCP 以独立分区方式组织管理。</p>
-            </article>
-            <article class="feature-slab">
-              <div>
-                <p class="detail-tag">04</p>
-                <h3>可追踪</h3>
-              </div>
-              <p>保留审计、设置与后续回溯所需的信息基础。</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section engineering-section reveal" id="status">
-          <div class="section-heading">
-            <h2>状态</h2>
-          </div>
-          <div class="engineering-grid">
-            <div class="engineering-panel">
-              <p class="detail-tag">产品</p>
-              <h3>已完成基础功能展示</h3>
             </div>
-            <div class="engineering-panel">
-              <p class="detail-tag">实现</p>
-              <h3>界面与交互仍在持续优化</h3>
+            <div class="module-copy">
+              <h3>知识库</h3>
+              <dl class="module-meta">
+                <div>
+                  <dt>技术栈</dt>
+                  <dd>本地文件导入 共享文件库 知识库绑定</dd>
+                </div>
+                <div>
+                  <dt>功能</dt>
+                  <dd>支持文件导入 当前知识库管理与后续角色绑定</dd>
+                </div>
+                <div>
+                  <dt>设计思路</dt>
+                  <dd>先整理共享文件 再绑定到具体知识库 方便后续给 NPC 和工作区复用</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="module-row reveal">
+            <div class="module-media">
+              <img src="assets/opencow/04-skills.png" alt="OpenCow Skills 截图" />
+            </div>
+            <div class="module-copy">
+              <h3>Skills</h3>
+              <dl class="module-meta">
+                <div>
+                  <dt>技术栈</dt>
+                  <dd>本地技能目录 技能安装 启用与管理</dd>
+                </div>
+                <div>
+                  <dt>功能</dt>
+                  <dd>展示推荐技能 已安装技能和后续技能操作入口</dd>
+                </div>
+                <div>
+                  <dt>设计思路</dt>
+                  <dd>将技能能力从聊天流程中抽离出来单独管理 让用户知道当前系统具备什么能力</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="module-row reveal">
+            <div class="module-media">
+              <img src="assets/opencow/05-npc.png" alt="OpenCow NPC 截图" />
+            </div>
+            <div class="module-copy">
+              <h3>NPC</h3>
+              <dl class="module-meta">
+                <div>
+                  <dt>技术栈</dt>
+                  <dd>角色配置 知识库绑定 本地模型协作</dd>
+                </div>
+                <div>
+                  <dt>功能</dt>
+                  <dd>支持不同角色使用不同知识与能力完成任务</dd>
+                </div>
+                <div>
+                  <dt>设计思路</dt>
+                  <dd>把角色定位 知识来源和能力边界分开配置 便于后续扩展不同场景下的工作流</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="module-row reveal">
+            <div class="module-media">
+              <img src="assets/opencow/06-mcp.png" alt="OpenCow MCP 截图" />
+            </div>
+            <div class="module-copy">
+              <h3>MCP</h3>
+              <dl class="module-meta">
+                <div>
+                  <dt>技术栈</dt>
+                  <dd>MCP 管理 推荐清单 扩展接入</dd>
+                </div>
+                <div>
+                  <dt>功能</dt>
+                  <dd>展示可安装的 MCP 与后续扩展入口</dd>
+                </div>
+                <div>
+                  <dt>后续方向</dt>
+                  <dd>继续补充浏览器联动 网页读取和更多工具型扩展 让工作台具备更强的外部操作能力</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="module-row reveal">
+            <div class="module-media">
+              <img src="assets/opencow/07-audit.png" alt="OpenCow 审计截图" />
+            </div>
+            <div class="module-copy">
+              <h3>审计</h3>
+              <dl class="module-meta">
+                <div>
+                  <dt>技术栈</dt>
+                  <dd>执行日志 审计记录 任务轨迹展示</dd>
+                </div>
+                <div>
+                  <dt>功能</dt>
+                  <dd>记录任务执行过程中的关键行为和上下文来源</dd>
+                </div>
+                <div>
+                  <dt>设计思路</dt>
+                  <dd>把日志做成可查看的前台页面 而不是只留在底层调试信息中 方便后续排查与回溯</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="module-row reveal">
+            <div class="module-media">
+              <img src="assets/opencow/08-settings.png" alt="OpenCow 设置截图" />
+            </div>
+            <div class="module-copy">
+              <h3>设置</h3>
+              <dl class="module-meta">
+                <div>
+                  <dt>技术栈</dt>
+                  <dd>Ollama 本地模型配置 全局参数设置</dd>
+                </div>
+                <div>
+                  <dt>功能</dt>
+                  <dd>负责本地模型检测 输出预算 模型切换与全局配置入口</dd>
+                </div>
+                <div>
+                  <dt>设计思路</dt>
+                  <dd>把系统级能力集中留在设置中 避免和业务页面混杂 同时方便后续扩展更多本地运行参数</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </section>
+
+        <section class="section section-flat reveal" id="status">
+          <div class="section-heading section-heading-tight">
+            <h2>当前进展</h2>
+          </div>
+          <div class="overview-pairs">
+            <div class="overview-pair">
+              <span>产品层面</span>
+              <p>已形成完整的工作台结构和主要页面框架</p>
+            </div>
+            <div class="overview-pair">
+              <span>后续重点</span>
+              <p>继续完善前端细节 后端链路稳定性和更多本地能力扩展</p>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="footer footer-minimal">
+      <footer class="footer footer-flat">
         <div>
           <h2>返回主页</h2>
-          <p>继续浏览。</p>
+          <p>继续查看个人主页与其他内容</p>
         </div>
         <div class="footer-links">
           <a href="index.html">主页</a>
@@ -202,6 +280,7 @@
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
