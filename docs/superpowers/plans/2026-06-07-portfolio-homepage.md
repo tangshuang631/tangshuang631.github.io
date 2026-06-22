@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** 搭建一个专业求职型、中文为主的 GitHub Pages 单页作品集首页。
+**Goal:** 搭建一个正式产品化、中文为主的 GitHub Pages 个人展示页首页。
 
-**Architecture:** 使用原生 HTML + CSS 构建纯静态单页，不依赖前端框架，直接部署到 GitHub Pages。页面采用首屏介绍、分类导航、项目目录和详情锚点的结构，方便后续扩展。
+**Architecture:** 使用原生 HTML + CSS 构建纯静态站点，不依赖前端框架，直接部署到 GitHub Pages。站点采用首页总览加独立项目页结构，方便后续按统一风格继续扩展。
 
 **Tech Stack:** HTML5, CSS3, GitHub Pages
 
@@ -34,8 +34,8 @@
 
 **Files:**
 - Create: `README.md`
-- Create: `docs/superpowers/specs/2026-06-07-portfolio-design.md`
+- Create: `docs/superpowers/specs/personal-showcase-guide.md`
 - Create: `docs/superpowers/plans/2026-06-07-portfolio-homepage.md`
 
 - [ ] Step 1: 说明主页用途与后续扩展方向
-- [ ] Step 2: 记录设计与实现方案
+- [ ] Step 2: 记录统一展示规范与实现方案

@@ -6,6 +6,8 @@
 
 **Architecture:** Keep the site as static HTML/CSS/JS, extend the existing shared visual system in `styles.css`, and add one dedicated case study page that reuses the same animation script. Update the homepage so `opencow` becomes the primary web/full-stack project entry without bloating the landing page.
 
+**Canonical reference:** `docs/superpowers/specs/personal-showcase-guide.md`
+
 **Tech Stack:** Static HTML, CSS, vanilla JavaScript, GSAP ScrollTrigger
 
 ---
