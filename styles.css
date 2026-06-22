@@ -508,6 +508,11 @@ a {
 }
 
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+body.js-enabled .reveal {
   opacity: 0;
   transform: translateY(10px);
 }

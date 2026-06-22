@@ -1,3 +1,5 @@
+document.body.classList.add("js-enabled");
+
 if (typeof window.gsap !== "undefined" && typeof window.ScrollTrigger !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 
