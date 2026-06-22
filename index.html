@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="谭懿铖的个人主页，用于展示项目经历、技术方向与后续作品成果。"
-    />
+    <meta name="description" content="谭懿铖的个人主页，展示项目经历与代表作品。" />
     <title>谭懿铖 | 个人主页</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,296 +13,65 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <div class="aurora aurora-one"></div>
-    <div class="aurora aurora-two"></div>
-    <div class="aurora aurora-three"></div>
-
-    <div class="page-shell">
-      <header class="hero reveal" id="top">
-        <nav class="topbar" aria-label="主导航">
-          <a class="brand" href="#top">个人主页</a>
+  <body class="page-minimal">
+    <div class="page-shell page-shell-minimal">
+      <header class="hero hero-minimal reveal" id="top">
+        <nav class="topbar topbar-minimal" aria-label="主导航">
+          <a class="brand" href="#top">谭懿铖</a>
           <div class="topbar-links">
-            <a href="#overview">首页</a>
-            <a href="#catalog">项目分类</a>
-            <a href="#projects">项目详情</a>
-            <a href="#contact">联系方式</a>
+            <a href="#projects">项目</a>
+            <a href="#about">简介</a>
+            <a href="#contact">联系</a>
           </div>
         </nav>
 
-        <section class="hero-grid" id="overview">
+        <section class="hero-grid hero-grid-minimal" id="about">
           <div class="hero-copy">
             <p class="eyebrow">Portfolio</p>
-            <h1>谭懿铖</h1>
+            <h1>OpenCow</h1>
             <p class="hero-lead">
-              以项目成果为核心的个人作品集主页，用于统一展示我的技术实践、开发经历与持续更新中的代表性项目。
+              一款把对话、搜索和本地能力收进同一工作台的桌面产品。
             </p>
-
-            <div class="hero-notice">
-              <span>个人主页维护更新中</span>
-              <p>
-                当前已完成基础视觉与内容框架，后续将继续补充更多项目说明、截图展示、个人照片与简历相关信息。
-              </p>
-            </div>
-
             <div class="hero-actions">
-              <a class="button button-primary" href="#projects">查看项目</a>
-              <a
-                class="button button-secondary"
-                href="https://github.com/tangshuang631"
-                target="_blank"
-                rel="noreferrer"
-                >GitHub 主页</a
-              >
+              <a class="button button-primary" href="opencow.html">进入产品页</a>
+              <a class="button button-secondary" href="https://github.com/tangshuang631" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
-
-          <aside class="hero-panel reveal" data-delay="0.1">
-            <div class="panel-badge">Resume Ready</div>
-            <h2>简历可直接使用的个人主页</h2>
-            <p>
-              站点已具备正式投递场景所需的统一入口、项目分类、详情锚点和后续扩展空间。
-            </p>
-
-            <div class="signal-list">
-              <div class="signal-card">
-                <strong>01</strong>
-                <span>统一汇总所有项目链接</span>
-              </div>
-              <div class="signal-card">
-                <strong>02</strong>
-                <span>后续可继续补充照片与成果图</span>
-              </div>
-              <div class="signal-card">
-                <strong>03</strong>
-                <span>无需重复修改简历中的站点地址</span>
-              </div>
-            </div>
-
-            <div class="site-link-card">
-              <p>个人主页链接</p>
-              <a href="https://tangshuang631.github.io" target="_blank" rel="noreferrer">
-                https://tangshuang631.github.io
-              </a>
-            </div>
-          </aside>
+          <div class="hero-side-text">
+            <p class="minimal-note">只保留重点入口。</p>
+          </div>
         </section>
       </header>
 
       <main>
-        <section class="section section-intro reveal">
-          <div class="section-heading">
-            <p class="section-kicker">项目分类</p>
-            <h2>按方向整理，便于快速浏览与后续扩展</h2>
-            <p>
-              我将项目按照技术方向进行归类，方便在求职、展示和后续补充内容时保持清晰结构。
-            </p>
+        <section class="section section-minimal reveal" id="projects">
+          <div class="section-heading section-heading-minimal">
+            <h2>重点</h2>
           </div>
 
-          <div class="category-grid">
-            <article class="category-card reveal" data-delay="0.05">
-              <div class="card-topline"></div>
-              <h3>AI / 大模型</h3>
-              <p>聚焦智能体、提示工程、自动化协作与模型应用实践。</p>
-              <a href="#project-codex-loop">查看示例项目</a>
-            </article>
-
-            <article class="category-card reveal" data-delay="0.1">
-              <div class="card-topline"></div>
-              <h3>数据分析</h3>
-              <p>预留用于后续补充数据处理、分析建模与可视化相关成果。</p>
-              <a href="#future-data">待补充</a>
-            </article>
-
-            <article class="category-card reveal" data-delay="0.15">
-              <div class="card-topline"></div>
-              <h3>Web / 全栈开发</h3>
-              <p>聚焦桌面工作台、产品前端设计、本地能力集成与完整应用落地。</p>
-              <a href="#project-opencow">查看示例项目</a>
-            </article>
-
-            <article class="category-card reveal" data-delay="0.2">
-              <div class="card-topline"></div>
-              <h3>其他项目</h3>
-              <p>可扩展收纳课程项目、实验性作品与跨领域实践。</p>
-              <a href="#future-more">待补充</a>
+          <div class="minimal-list">
+            <article class="minimal-item">
+              <div class="minimal-item-head">
+                <h3>OpenCow</h3>
+                <a href="opencow.html">查看</a>
+              </div>
+              <p>本机工作台。</p>
             </article>
           </div>
-        </section>
-
-        <section class="section section-directory reveal" id="projects">
-          <div class="section-heading split-heading">
-            <div>
-              <p class="section-kicker">项目目录</p>
-              <h2>从总览卡片快速跳转到对应详情区</h2>
-            </div>
-            <p>
-              页面结构已经为后续新增项目预留好标准位置，后面只需要继续补充具体内容即可。
-            </p>
-          </div>
-
-          <div class="project-directory">
-            <article class="project-card feature-card reveal" data-delay="0.05">
-              <div class="project-meta">
-                <span>AI / 大模型</span>
-                <span>已接入主页</span>
-              </div>
-              <h3>codex-loop</h3>
-              <p>
-                用于展示你在 Codex、自动化协作或相关开发方向上的项目实践，当前已作为主页示例项目接入。
-              </p>
-              <div class="project-actions">
-                <a class="text-link" href="#project-codex-loop">查看详情</a>
-                <a
-                  class="text-link"
-                  href="https://github.com/tangshuang631/codex-loop"
-                  target="_blank"
-                  rel="noreferrer"
-                  >仓库链接</a
-                >
-              </div>
-            </article>
-
-            <article class="project-card muted-card reveal" data-delay="0.1">
-              <div class="project-meta">
-                <span>数据分析</span>
-                <span>待补充</span>
-              </div>
-              <h3>下一个项目位置</h3>
-              <p>预留给你后续添加新的分析类项目，结构已经准备好。</p>
-              <div class="project-actions">
-                <a class="text-link" href="#future-data">查看分区</a>
-              </div>
-            </article>
-
-            <article class="project-card muted-card reveal" data-delay="0.15">
-              <div class="project-meta">
-                <span>Web / 全栈开发</span>
-                <span>重点案例</span>
-              </div>
-              <h3>opencow</h3>
-              <p>
-                一个本地优先的 AI 桌面工作台案例，重点展示 Workbench 界面设计、对话流、搜索/RAG、会话恢复与受控能力集成。
-              </p>
-              <div class="project-tag-row">
-                <span class="project-tag">Workbench</span>
-                <span class="project-tag">Local-first</span>
-                <span class="project-tag">RAG / Search</span>
-              </div>
-              <div class="project-actions">
-                <a class="text-link" href="opencow.html">查看案例页</a>
-                <a
-                  class="text-link"
-                  href="https://github.com/tangshuang631/opencow"
-                  target="_blank"
-                  rel="noreferrer"
-                  >仓库链接</a
-                >
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="section detail-section reveal" id="catalog">
-          <div class="section-heading">
-            <p class="section-kicker">项目详情</p>
-            <h2>当前项目示例与后续内容扩展区域</h2>
-            <p>
-              先保留清晰的骨架，再逐步补全每个项目的背景、技术方案、个人贡献和成果展示。
-            </p>
-          </div>
-
-          <article class="detail-card reveal" id="project-codex-loop" data-delay="0.05">
-            <div class="detail-header">
-              <div>
-                <p class="detail-tag">AI / 大模型</p>
-                <h3>codex-loop</h3>
-              </div>
-              <a
-                class="button button-secondary"
-                href="https://github.com/tangshuang631/codex-loop"
-                target="_blank"
-                rel="noreferrer"
-                >访问仓库</a
-              >
-            </div>
-
-            <p class="detail-copy">
-              这是当前已接入主页的项目示例。后续可以继续在这里补充项目背景、技术栈、负责内容、效果图以及演示地址。
-            </p>
-
-            <div class="detail-grid">
-              <div class="detail-block">
-                <h4>可补充内容</h4>
-                <ul>
-                  <li>项目简介与核心目标</li>
-                  <li>技术栈与关键实现</li>
-                  <li>个人贡献与成果亮点</li>
-                </ul>
-              </div>
-              <div class="detail-block">
-                <h4>当前状态</h4>
-                <ul>
-                  <li>已接入首页项目目录</li>
-                  <li>可从简历链接直接访问</li>
-                  <li>等待后续完善展示细节</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="detail-card placeholder-card reveal" id="future-data" data-delay="0.08">
-            <p class="detail-tag">数据分析</p>
-            <h3>数据分析项目区域</h3>
-            <p>预留用于后续补充相关项目、分析报告、图表截图与结论摘要。</p>
-          </article>
-
-          <article class="detail-card placeholder-card reveal" id="future-web" data-delay="0.11">
-            <p class="detail-tag">Web / 全栈开发</p>
-            <h3 id="project-opencow">opencow</h3>
-            <p>
-              该项目已升级为独立案例页展示，用于完整呈现产品界面设计、工作台结构、关键功能和工程实现思路。
-            </p>
-            <div class="project-actions">
-              <a class="button button-primary" href="opencow.html">进入案例页</a>
-              <a
-                class="button button-secondary"
-                href="https://github.com/tangshuang631/opencow"
-                target="_blank"
-                rel="noreferrer"
-                >访问仓库</a
-              >
-            </div>
-          </article>
-
-          <article class="detail-card placeholder-card reveal" id="future-more" data-delay="0.14">
-            <p class="detail-tag">其他项目</p>
-            <h3>更多项目区域</h3>
-            <p>预留用于后续补充跨学科作品、课程成果与实验性项目。</p>
-          </article>
         </section>
       </main>
 
-      <footer class="footer reveal" id="contact">
+      <footer class="footer footer-minimal" id="contact">
         <div>
-          <p class="section-kicker">联系方式</p>
-          <h2>欢迎通过 GitHub 先了解我的项目进展</h2>
+          <h2>联系</h2>
+          <p><a href="https://github.com/tangshuang631" target="_blank" rel="noreferrer">GitHub</a></p>
         </div>
         <div class="footer-links">
-          <a href="https://github.com/tangshuang631" target="_blank" rel="noreferrer">GitHub</a>
-          <a
-            href="https://github.com/tangshuang631/tangshuang631.github.io"
-            target="_blank"
-            rel="noreferrer"
-            >主页仓库</a
-          >
-          <a href="#top">返回顶部</a>
+          <a href="https://github.com/tangshuang631/codex-loop" target="_blank" rel="noreferrer">其他项目</a>
         </div>
       </footer>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
