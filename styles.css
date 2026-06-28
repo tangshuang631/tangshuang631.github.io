@@ -458,6 +458,23 @@ a {
   overflow: visible;
 }
 
+.screenshot-card-placeholder {
+  overflow: hidden;
+}
+
+.screenshot-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at top left, rgba(31, 41, 51, 0.04), transparent 42%),
+    linear-gradient(180deg, #fbfbfb 0%, #f3f4f5 100%);
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
 .screenshot-card img {
   display: block;
   width: 100%;

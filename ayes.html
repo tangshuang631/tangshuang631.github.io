@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ayes Skills 产品展示页" />
+    <title>Ayes | Skills 展示页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell case-shell case-shell-editorial">
+      <header class="hero hero-flat reveal" id="top">
+        <nav class="topbar topbar-flat" aria-label="产品页导航">
+          <a class="brand" href="index.html">Ayes</a>
+          <div class="topbar-links">
+            <a href="#overview">概览</a>
+            <a href="#highlights">亮点</a>
+            <a href="#screens">截图</a>
+            <a href="#status">状态</a>
+          </div>
+        </nav>
+
+        <section class="hero-grid hero-grid-editorial" id="overview">
+          <div class="hero-copy">
+            <p class="eyebrow">Local Monitoring Skills</p>
+            <h1>Ayes</h1>
+            <p class="hero-lead">
+              面向 Codex / OpenClaw 的本地桌面监控 skills
+              聚焦屏幕与进程监控 任务回忆 ROI 分层和低 token 查询链路
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/tangshuang631/Ayes" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button button-secondary" href="#highlights">查看亮点</a>
+            </div>
+          </div>
+          <div class="hero-side-text">
+            <p class="minimal-note">当前版本重点是把监控结果做成可检索 可继续对话 可长期沉淀的技能能力</p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section section-flat reveal">
+          <div class="section-heading section-heading-tight">
+            <h2>项目概览</h2>
+          </div>
+          <div class="overview-pairs">
+            <div class="overview-pair">
+              <span>项目定位</span>
+              <p>安装到 Codex / OpenClaw 后可直接使用的本地视觉监控 skills</p>
+            </div>
+            <div class="overview-pair">
+              <span>核心目标</span>
+              <p>让监控结果更像可对话的事实记忆 而不是一堆原始截图和日志</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-flat reveal" id="highlights">
+          <div class="section-heading section-heading-tight">
+            <h2>技术亮点</h2>
+          </div>
+
+          <div class="feature-rail">
+            <article class="feature-slab">
+              <h3>统一事实层</h3>
+              <p>通过 MemoryFact 把 event、OCR、VLM 摘要统一成可检索事实 再写入短期记忆和 FTS 索引</p>
+            </article>
+            <article class="feature-slab">
+              <h3>低 token 查询</h3>
+              <p>默认 query 先读轻量索引和压缩记忆 避免把原始 JSONL、截图块和日志直接塞给模型</p>
+            </article>
+            <article class="feature-slab">
+              <h3>任务分层</h3>
+              <p>支持主任务、ROI 子任务、专属配置和独立目录树 便于长期监控和多任务并行</p>
+            </article>
+            <article class="feature-slab">
+              <h3>本地增强</h3>
+              <p>可接入 Ollama 视觉模型 做 OCR 抗噪和主内容理解 同时保留离线和低资源路径</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-flat reveal">
+          <div class="section-heading section-heading-tight">
+            <h2>设计与架构</h2>
+          </div>
+          <div class="overview-pairs">
+            <div class="overview-pair">
+              <span>设计风格</span>
+              <p>延续 OpenCow 的克制静态作品集语言 以分割线和模块序列组织信息 不做花哨卡片堆叠</p>
+            </div>
+            <div class="overview-pair">
+              <span>架构思路</span>
+              <p>技能入口、运行态、发行态和安装态分离 让项目既能被安装使用 也能持续迭代和发布</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-flat reveal" id="screens">
+          <div class="section-heading section-heading-tight">
+            <h2>截图预留</h2>
+          </div>
+          <div class="screenshot-grid">
+            <figure class="screenshot-card screenshot-card-placeholder">
+              <div class="screenshot-placeholder">
+                <span>菜单栏 / 任务列表截图占位</span>
+              </div>
+              <figcaption>
+                <strong>菜单栏与任务入口</strong>
+                <span>后续补充菜单栏、设置和运行态截图 用于展示真实交互与任务树结构</span>
+              </figcaption>
+            </figure>
+            <figure class="screenshot-card screenshot-card-placeholder">
+              <div class="screenshot-placeholder">
+                <span>记忆 / 查询截图占位</span>
+              </div>
+              <figcaption>
+                <strong>记忆与查询链路</strong>
+                <span>后续补充 query / memory / ROI 检索结果截图 用于说明低 token 回忆流程</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section section-flat reveal" id="status">
+          <div class="section-heading section-heading-tight">
+            <h2>当前状态</h2>
+          </div>
+          <div class="overview-pairs">
+            <div class="overview-pair">
+              <span>交付状态</span>
+              <p>已完成技能化与发行态收尾 主要用于本地桌面监控与回忆查询</p>
+            </div>
+            <div class="overview-pair">
+              <span>待补内容</span>
+              <p>补齐真实菜单截图 运行态证据和更完整的使用演示</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer footer-flat">
+        <div>
+          <h2>返回主页</h2>
+          <p>继续查看个人主页与其他项目</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">主页</a>
+          <a href="https://github.com/tangshuang631/Ayes" target="_blank" rel="noreferrer">仓库</a>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
