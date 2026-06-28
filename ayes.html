@@ -22,6 +22,7 @@
             <a href="#overview">概览</a>
             <a href="#highlights">亮点</a>
             <a href="#screens">截图</a>
+            <a href="ayes-architecture.html">架构图</a>
             <a href="#status">状态</a>
           </div>
         </nav>
@@ -31,17 +32,17 @@
             <p class="eyebrow">Local Monitoring Skills</p>
             <h1>Ayes</h1>
             <p class="hero-lead">
-              面向 Codex / OpenClaw 的本地桌面监控 skills
-              主要通过和 agent 交互完成任务配置、运行与回忆
-              状态栏只是辅助入口
+              面向 Codex / OpenClaw 的本地桌面监控 skills。
+              主要通过 agent 对话完成任务创建、配置、回读与控制，
+              菜单栏仅提供辅助入口。
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="https://github.com/tangshuang631/Ayes" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="button button-secondary" href="#highlights">查看亮点</a>
+              <a class="button button-secondary" href="ayes-architecture.html">查看架构图</a>
             </div>
           </div>
           <div class="hero-side-text">
-            <p class="minimal-note">所有配置和设定都可以通过 agent 完成 这是一个真正可安装可复用的 skills</p>
+            <p class="minimal-note">配置与运行均可通过 agent 完成，支持安装复用。</p>
           </div>
         </section>
       </header>
@@ -53,12 +54,12 @@
           </div>
           <div class="overview-pairs">
             <div class="overview-pair">
-              <span>项目定位</span>
-              <p>安装到 Codex / OpenClaw 后可直接使用的本地视觉监控 skills</p>
+              <span>定位</span>
+              <p>面向 Codex / OpenClaw 的本地监控 skills</p>
             </div>
             <div class="overview-pair">
-              <span>核心目标</span>
-              <p>让监控结果更像可对话的事实记忆 而不是一堆原始截图和日志</p>
+              <span>目标</span>
+              <p>将监控结果收敛为可检索事实</p>
             </div>
           </div>
         </section>
@@ -71,66 +72,82 @@
           <div class="feature-rail">
             <article class="feature-slab">
               <h3>统一事实层</h3>
-              <p>通过 MemoryFact 把 event、OCR、VLM 摘要统一成可检索事实 再写入短期记忆和 FTS 索引</p>
+              <p>以 MemoryFact 统一 event、OCR、VLM 结果，写入可检索事实与索引</p>
             </article>
             <article class="feature-slab">
               <h3>低 token 查询</h3>
-              <p>默认 query 先读轻量索引和压缩记忆 避免把原始 JSONL、截图块和日志直接塞给模型</p>
+              <p>默认 query 先读轻量索引与压缩记忆，避免直接加载原始数据</p>
             </article>
             <article class="feature-slab">
               <h3>任务分层</h3>
-              <p>支持主任务、ROI 子任务、专属配置和独立目录树 便于长期监控和多任务并行</p>
+              <p>支持主任务、ROI 子任务、专属配置与独立目录树</p>
             </article>
             <article class="feature-slab">
               <h3>本地增强</h3>
-              <p>可接入 Ollama 视觉模型 做 OCR 抗噪和主内容理解 同时保留离线和低资源路径</p>
+              <p>可接入 Ollama 视觉模型，用于 OCR 抗噪与主内容理解</p>
             </article>
-          </div>
-        </section>
-
-        <section class="section section-flat reveal">
-          <div class="section-heading section-heading-tight">
-            <h2>设计与架构</h2>
-          </div>
-          <div class="overview-pairs">
-            <div class="overview-pair">
-              <span>设计风格</span>
-              <p>延续 OpenCow 的克制静态作品集语言 以分割线和模块序列组织信息 不做花哨卡片堆叠</p>
-            </div>
-            <div class="overview-pair">
-              <span>架构思路</span>
-              <p>技能入口、运行态、发行态和安装态分离 让项目既能被安装使用 也能持续迭代和发布</p>
-            </div>
           </div>
         </section>
 
         <section class="section section-flat reveal" id="screens">
           <div class="section-heading section-heading-tight">
-            <h2>截图预留</h2>
+            <h2>截图与说明</h2>
           </div>
-          <div class="screenshot-grid">
-            <figure class="screenshot-card screenshot-card-placeholder">
+          <article class="module-row reveal">
+            <div class="module-media">
               <img src="assets/ayes/01-answer-flow.png" alt="Ayes 通过技能查询最近监控内容的真实使用截图" />
-              <figcaption>
-                <strong>技能对话回读</strong>
-                <span>主要通过和 agent 对话读取最近监控内容与任务摘要 状态栏只负责辅助展示</span>
-              </figcaption>
-            </figure>
-            <figure class="screenshot-card screenshot-card-placeholder">
+            </div>
+            <div class="module-copy">
+              <h3>技术栈</h3>
+              <dl class="module-meta">
+                <div>
+                  <dd>Codex / OpenClaw skills，Agent 对话入口，轻量 query 与短期记忆索引</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="module-row reveal">
+            <div class="module-media module-media-compact">
               <img src="assets/ayes/02-menubar.png" alt="Ayes 菜单栏控制面真实截图" />
-              <figcaption>
-                <strong>菜单栏控制面</strong>
-                <span>菜单栏提供快速入口 但配置和设定并不依赖状态栏 完整流程仍可通过 agent 完成</span>
-              </figcaption>
-            </figure>
-            <figure class="screenshot-card screenshot-card-placeholder">
+            </div>
+            <div class="module-copy">
+              <h3>设计思路</h3>
+              <dl class="module-meta">
+                <div>
+                  <dd>菜单栏仅提供快速入口，配置仍通过 agent 完成</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="module-row reveal">
+            <div class="module-media">
               <img src="assets/ayes/03-settings.png" alt="Ayes 设置面板真实截图" />
-              <figcaption>
-                <strong>任务专属设置</strong>
-                <span>采样 记忆 视觉增强 快捷键和 Webhook 都属于技能配置项 可以通过 agent 或设置面板调整</span>
-              </figcaption>
-            </figure>
-          </div>
+            </div>
+            <div class="module-copy">
+              <h3>架构</h3>
+              <dl class="module-meta">
+                <div>
+                  <dd>任务配置、记忆、视觉增强、快捷键和 Webhook 统一纳入配置层</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="module-row reveal">
+            <div class="module-media">
+              <img src="assets/ayes/04-roi.png" alt="Ayes 创建 ROI 的截图" />
+            </div>
+            <div class="module-copy">
+              <h3>ROI 框选</h3>
+              <dl class="module-meta">
+                <div>
+                  <dd>支持从目标画面中框选 ROI 区域，并按任务坐标系保存</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
         </section>
 
         <section class="section section-flat reveal" id="status">
@@ -139,12 +156,12 @@
           </div>
           <div class="overview-pairs">
             <div class="overview-pair">
-              <span>交付状态</span>
-              <p>已完成技能化与发行态收尾 主要用于本地桌面监控与回忆查询</p>
+              <span>状态</span>
+              <p>已完成技能化与发行态收尾</p>
             </div>
             <div class="overview-pair">
-              <span>待补内容</span>
-              <p>后续可继续补更多真实使用截图与 ROI 场景演示</p>
+              <span>后续</span>
+              <p>可继续补充更多真实截图与 ROI 场景</p>
             </div>
           </div>
         </section>
@@ -152,8 +169,8 @@
 
       <footer class="footer footer-flat">
         <div>
-          <h2>返回主页</h2>
-          <p>继续查看个人主页与其他项目</p>
+          <h2>主页</h2>
+          <p>返回个人主页</p>
         </div>
         <div class="footer-links">
           <a href="index.html">主页</a>
