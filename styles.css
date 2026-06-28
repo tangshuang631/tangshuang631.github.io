@@ -462,6 +462,13 @@ a {
   overflow: hidden;
 }
 
+.screenshot-card-placeholder img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
 .screenshot-placeholder {
   display: grid;
   place-items: center;
