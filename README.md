@@ -1,10 +1,10 @@
-# tangshuang631.github.io
+# regrevia.github.io
 
 谭懿铖的 GitHub Pages 个人主页仓库。
 
 当前主页地址：
 
-- https://tangshuang631.github.io
+- https://regrevia.github.io
 
 当前为单页作品集结构，后续可继续补充：
 
